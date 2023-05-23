@@ -4,5 +4,5 @@
 # 24 -> 4  16  4
 #     60 -> 10  40  10
 
-a = int(input(''))
-print()  ЧИСЛО ДОЛЖНО БЫТЬ КРАТНО 6 
+a = int(input())
+print(int(a / 6), int(a * 2 / 3), int(a / 6))
