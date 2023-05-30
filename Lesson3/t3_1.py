@@ -6,9 +6,10 @@
 #     1 2 3 4 5
 #     3
 #     -> 1
+from random import choices
 
 num = int(input())
 list_nums = choices(range(num * 2), k=num)
-print(list.nums)
-result = list_num.count(int(input))
+print(list_nums)
+result = list_nums.count(int(input))
 print(result)
