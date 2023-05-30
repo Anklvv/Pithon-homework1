@@ -8,4 +8,7 @@
 #     -> 1
 
 num = int(input())
-list_nums = 
+list_nums = choices(range(num * 2), k=num)
+print(list.nums)
+result = list_num.count(int(input))
+print(result)
