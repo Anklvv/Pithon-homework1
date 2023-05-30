@@ -6,3 +6,6 @@
 #     1 2 3 4 5
 #     3
 #     -> 1
+
+num = int(input())
+list_nums = 
