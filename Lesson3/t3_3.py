@@ -23,14 +23,14 @@
 # ноутбук
 #     12
 
-ang_dict = { "AEIOULNSTRАВЕИНОРСТ": 1,
-            "DGДКЛМПУ": 2,
-            "FHVWYБГЁЬЯ": 3,
-            "FHVWYЫЙ": 4,
-            "KЖЗХЦЧ": 5,
-            "JXШЭЮ": 8,
-            "QZФЩЪ": 10 }
+add_dict = { 1:"AEIOULNSTRАВЕИНОРСТ",
+            2: "DGДКЛМПУ",
+            3: "FHVWYБГЁЬЯ",
+            4: "FHVWYЫЙ",
+            5: "KЖЗХЦЧ",
+            8: "JXШЭЮ",
+            10: "QZФЩЪ" }
 
 word = input()
 
-print(sum([i[i] for i in ang.dict.items() for j in word.upper() if j in i[0]]))
+print(sum([i[i] for i in dict.items() for j in word.upper() if j in i[0]]))

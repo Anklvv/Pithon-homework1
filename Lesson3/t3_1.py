@@ -6,10 +6,19 @@
 #     1 2 3 4 5
 #     3
 #     -> 1
-from random import choices
+# from random import choices
 
-num = int(input())
-list_nums = choices(range(num * 2), k=num)
-print(list_nums)
-result = list_nums.count(int(input))
-print(result)
+# num = int(input())
+# list_nums = choices(range(num * 2), k=num)
+# print(list_nums)
+
+# result = list_nums.count(int(input))
+# print(result)
+
+# list_nums = [int(input()) for _ in range(int(input()))]
+# print(list_nums.count(int(input())))
+
+n = int(input())
+a = map(int(input()).split())
+x = int(input())
+print(sum(map(lambda z: int(z == x), a)))
