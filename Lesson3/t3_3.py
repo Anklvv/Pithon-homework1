@@ -31,6 +31,8 @@ add_dict = { 1:"AEIOULNSTRАВЕИНОРСТ",
             8: "JXШЭЮ",
             10: "QZФЩЪ" }
 
-word = input()
+n = abs(int(input()))
 
-print(sum([i[i] for i in dict.items() for j in word.upper() if j in i[0]]))
+word = input().upper
+
+print(sum([k for i in word for k, v in dict() if i in v]))
