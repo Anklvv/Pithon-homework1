@@ -23,7 +23,10 @@
 # ноутбук
 #     12
 
-add_dict = { 1:"AEIOULNSTRАВЕИНОРСТ",
+
+n = input().upper()
+
+scrabble = { 1:"AEIOULNSTRАВЕИНОРСТ",
             2: "DGДКЛМПУ",
             3: "FHVWYБГЁЬЯ",
             4: "FHVWYЫЙ",
@@ -31,8 +34,6 @@ add_dict = { 1:"AEIOULNSTRАВЕИНОРСТ",
             8: "JXШЭЮ",
             10: "QZФЩЪ" }
 
-n = abs(int(input()))
 
-word = input().upper
 
-print(sum([k for i in word for k, v in dict() if i in v]))
+print(f'Стоимость слова: {sum([i for m in n for i, j in scrabble.items() if m in j])}')

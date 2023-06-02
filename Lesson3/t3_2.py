@@ -9,15 +9,22 @@
 #     -> 5
 
 from random import randint
-
-list_nums = [randint(1, 21) for _ in range(int(input))]
-
-print(list_nums)
-num = int(input())
-right_num = list_nums[0]
-
-for i in list_nums:
-    if abs(num - 1) < abs(num - right_num):
-        right_num = i
-
-print(right_num)
+n = int(input('Введите количество элементов: '))
+a = list()
+for i in range(n):
+    a.append(randint(1, 10))
+print(a)
+x = int(input('Введите искомое число: '))
+if x in a:
+    print(x)
+else:
+    min_x = abs(a[0] - x)
+    pos = 0
+    for i in range(1, n):
+        difference = abs(a[i] - x)
+        if difference == min_x:
+            pos = pos if a[pos] < a[i] else i
+        elif difference < min_x:
+            min_x = difference
+            pos = i
+    print(a[pos])
