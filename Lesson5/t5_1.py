@@ -2,3 +2,12 @@
 # *Пример:*
 # A = 3; B = 5 -> 243 (3⁵)
 #     A = 2; B = 3 -> 8 
+# Рекурсия
+
+
+def degree(a, b):
+    if b == 0:
+        return 1
+    return degree(a, b - 1) * a
+a, b = int(input()), int(input())
+print(degree(a, b))

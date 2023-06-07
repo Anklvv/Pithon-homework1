@@ -4,3 +4,11 @@
 # *Пример:*
 # 2 2
 #     4 
+# Рекурсия
+
+def sum_1(a, b): 
+    if a == 0:
+        return b
+    return sum_1(a - 1, b + 1)
+
+print(sum_1(int(input()),int(input())))
