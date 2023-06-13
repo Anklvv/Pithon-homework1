@@ -29,7 +29,15 @@ def read_records():
 
 
 def add_new_record():
-       pass
+       global last_id
+
+
+    array = ["surname", "name", "patronymic", "phone_number"]
+    string = ""
+
+    for i in array:
+       string += input(f"Enter {i} ") + " "
+       
 
 
 def main_menu():
