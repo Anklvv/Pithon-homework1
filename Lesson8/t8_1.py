@@ -15,12 +15,21 @@ def read_records():
 
         with open(file_base, encoding="utf-8") as f: 
                 all_data = [i.strip() for i in f ]
+                if all_data:
+                       last_id..................
                 last_id = int(all_data[-1].split()[0])
         return all_data
 
 
-# def show_all():
-#         print(*all_data)
+ def show_all():
+         if all_data:
+            print(*all_data)
+        else:
+            print("Empty data!\n")
+
+
+def add_new_record():
+       pass
 
 
 def main_menu():
@@ -36,9 +45,9 @@ def main_menu():
         "7. Exit \n"
         match answer:
                 case "1":
-                    print(read_records())
+                    show_all()
                 case "2":
-                        pass
+                    add_new_record()
                 case "3":
                         pass
                 case "4":
