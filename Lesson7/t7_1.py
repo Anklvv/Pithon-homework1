@@ -28,3 +28,7 @@ else:
 
 
 
+# print(('Пам парам', 'Парам пам-пам')[len(s := set(sum(j in 'уеыаоэяиюё' for j in i) for i in input().split())) == 1 and s.pop() != 0])
+
+
+
