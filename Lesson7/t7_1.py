@@ -8,3 +8,20 @@
 # *Пример:*
 # **Ввод:** пара-ра-рам рам-пам-папам па-ра-па-да    
 #     **Вывод:** Парам пам-пам  
+# ??????
+
+
+def rifma(ritm):
+    st = ritm.lower().split()
+    check = lambda x: sum(1 for i in x if i in 'аеёиоуыэюя')
+    tmp = check(st[0])
+    if all([0 != check(i) == tmp for i in st]):
+        return 'Парам пам-пам'
+    return 'Пам парам'
+
+print(rifma('пара-ра-рам рам-пам-папам па-ра-па-да'))
+print(rifma('п п п'))
+print(rifma('пп пп пп'))
+print(rifma('па пе па'))
+
+
